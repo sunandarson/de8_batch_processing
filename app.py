@@ -10,13 +10,13 @@ if __name__ == '__main__':
     with open(path+'/'+'config.json') as file:
         conf = json.load(file)['postgresql']
 
-    # try:
+    try:
         conn = psycopg2.connect(host=conf['host'],
                                 database=conf['db'],
                                 user=conf['user'],
                                 password=conf['pwd']
                                 )
 
-        #print(f"[INFO]success connect postgreSQL")
-   # except:
-    #    print(f"[INFO]can't connect")
+        print(f"[INFO]success connect postgreSQL")
+    except:
+        print(f"[INFO]can't connect")
