@@ -1,5 +1,4 @@
 --- Example Extract
-
 SELECT 	order_id,
 		order_date,
 		a.user_id,
