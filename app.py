@@ -22,12 +22,12 @@ if __name__ == '__main__':
     path_query = os.getcwd()+'/query/'
     query = sqlparse.format(
         open(
-            path_query+'query_factorders.sql','r'
+            path_query+'query_forders.sql','r'
             ).read(), strip_comments=True).strip()
 
     query_dwh = sqlparse.format(
         open(
-            path_query+'dwh_factorders.sql','r'
+            path_query+'dwh_forders.sql','r'
             ).read(), strip_comments=True).strip()
     try:
         print(f"[INFO] Service ETL is Running .....")
