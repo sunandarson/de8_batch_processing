@@ -1,5 +1,4 @@
 -- Example DWH
-
 DROP TABLE IF EXISTS dim_orders;
 CREATE TABLE dim_orders (
 	order_id INT NOT NULL,
